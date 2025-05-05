@@ -4,6 +4,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen bg-gray-50">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
       {/* Hero + CTA Section */}
       <section className="w-full bg-gradient-to-r from-blue-500 to-indigo-700 text-white py-20">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -30,13 +31,16 @@ export default function Home() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <Image
-              src="/images/organizer-hero.jpg"
+            <video
+              src="/videos/hero_video.mp4"
               alt="Universal Can & Bottle Organizer"
-              width={420}
-              height={320}
+              width={630}
+              height={480}
               className="rounded-lg shadow-lg object-cover"
-              priority
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </div>
@@ -50,47 +54,27 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
-                img: "/images/pusher1.jpg",
-                title: "Standard Can Pusher",
-                desc: "Ideal for soda cans and similar-sized beverages. Keeps your shelves neat and products front-faced."
+                img: "/images/Drink_pusher/drink_organized_1.png",
+                title: "Drink Pusher System",
+                desc: "Advanced spring-loaded design for beverage organization. Perfect for cans and bottles, ensuring automatic front-facing display in refrigerators and shelves."
               },
               {
-                img: "/images/pusher2.jpg",
-                title: "Bottle Organizer",
-                desc: "Perfect for water bottles and juices. Ensures easy access and maximizes shelf space."
+                img: "/images/Cigarette_pusher/Cigarette_pusher_1.png",
+                title: "Cigarette Pusher Display",
+                desc: "Specialized pusher system for tobacco products. Features automatic replenishment and adjustable width for various cigarette package sizes."
               },
               {
-                img: "/images/pusher3.jpg",
-                title: "Adjustable Width Pusher",
-                desc: "Flexible design for various product sizes. Easily adapts to your merchandising needs."
+                img: "/images/customized_width/customized_width_1.png",
+                title: "Customizable Width Pusher",
+                desc: "Versatile pusher system with adjustable width settings. Ideal for retail environments requiring flexible product organization solutions."
               },
               {
-                img: "/images/pusher4.jpg",
-                title: "Heavy Duty Pusher",
-                desc: "Built for larger or heavier items. Durable and reliable for high-traffic retail environments."
-              },
-              {
-                img: "/images/pusher5.jpg",
-                title: "Slimline Pusher",
-                desc: "Space-saving design for narrow shelves. Great for maximizing product visibility."
-              },
-              {
-                img: "/images/pusher6.jpg",
-                title: "Multi-Row Organizer",
-                desc: "Organize multiple rows of products efficiently. Perfect for busy stores."
-              },
-              {
-                img: "/images/pusher7.jpg",
-                title: "Easy Install Pusher",
-                desc: "Quick and tool-free installation. Upgrade your shelves in minutes."
-              },
-              {
-                img: "/images/pusher8.jpg",
-                title: "Premium Display Pusher",
-                desc: "Enhance your shelf aesthetics with a premium look and smooth product movement."
+                img: "/images/Patented_product_snus/Patented_product_snus_1.png",
+                title: "Patented Snus Pusher",
+                desc: "Innovative patented design specifically for snus products. Features unique curved design and automatic front-facing display system."
               }
             ].map((item, idx) => (
-              <div key={idx} className="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center p-4">
+              <div key={idx} className="bg-[#ebebeb] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center pt-8 px-4 pb-4">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -133,25 +117,25 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-10">
             {/* 优点1 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
-              <img src="/icons/customizable.svg" alt="Customizable" className="w-14 h-14 mb-5" />
+              <img src="/images/home/Customizable.png" alt="Customizable" className="w-14 h-14 mb-5" />
               <h3 className="text-lg font-semibold mb-3 text-blue-700">Customizable to Your Needs</h3>
               <p className="text-gray-600 text-center text-base">Adjustable width and configuration to perfectly fit different items and maximize your space.</p>
             </div>
             {/* 优点2 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
-              <img src="/icons/affordable.svg" alt="Affordable" className="w-14 h-14 mb-5" />
-              <h3 className="text-lg font-semibold mb-3 text-blue-700">Affordable Organization Solution</h3>
+            <img src="/images/home/Solution.png" alt="Customizable" className="w-14 h-14 mb-5" />
+              <h3 className="text-lg font-semibold mb-3 text-blue-700">Affordable Solution</h3>
               <p className="text-gray-600 text-center text-base">A cost-effective way to improve organization without the extra cost of complex systems.</p>
             </div>
             {/* 优点3 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
-              <img src="/icons/durable.svg" alt="Durable" className="w-14 h-14 mb-5" />
+              <img src="/images/home/Durable.png" alt="Durable" className="w-14 h-14 mb-5" />
               <h3 className="text-lg font-semibold mb-3 text-blue-700">Durable & Easy to Use</h3>
               <p className="text-gray-600 text-center text-base">Made from sturdy plastic, long-lasting and quick to install for most fridges and shelves.</p>
             </div>
             {/* 优点4 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
-              <img src="/icons/flexible-order.svg" alt="Flexible Order" className="w-14 h-14 mb-5" />
+              <img src="/images/home/Flexible.png" alt="Flexible Order" className="w-14 h-14 mb-5" />
               <h3 className="text-lg font-semibold mb-3 text-blue-700">Flexible Order Quantity</h3>
               <p className="text-gray-600 text-center text-base">Order in quantities that suit your business needs, whether for small shops or large supermarkets.</p>
             </div>
@@ -169,11 +153,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
             <div className="md:w-1/2">
               <Image
-                src="/images/advantage1.jpg"
+                src="/images/Drink_pusher/drink_organizer_2.png"
                 alt="Professional Manufacturing"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-lg object-cover"
               />
             </div>
             <div className="md:w-1/2">
@@ -203,11 +187,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
             <div className="md:w-1/2">
               <Image
-                src="/images/advantage2.jpg"
+                src="/images/customized_width/customized_width_2.png"
                 alt="Global Service Network"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-lg object-cover"
               />
             </div>
             <div className="md:w-1/2">
@@ -240,11 +224,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <Image
-                src="/images/advantage3.jpg"
+                src="/images/Cigarette_pusher/Cigarette_pusher_2.png"
                 alt="Customization Capability"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-lg object-cover"
               />
             </div>
             <div className="md:w-1/2">
@@ -272,11 +256,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="md:w-1/2">
               <Image
-                src="/images/advantage4.jpg"
+                src="/images/Patented_product_snus/Patented_product_snus_2.png"
                 alt="Snus Pusher Product"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-lg object-cover"
               />
             </div>
             <div className="md:w-1/2">
