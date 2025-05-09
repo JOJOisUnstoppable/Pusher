@@ -117,50 +117,50 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-10">
             {/* 优点1 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
-              <Image
-                src="/images/home/Customizable.png"
+               <Image
+                src="/images/Home/Customizable.png"
                 alt="Customizable"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
+                width={270} 
+                height={180} 
+                className="rounded-lg object-contain w-full h-44" // 添加固定高度 h-44
               />
-              <h3 className="text-lg font-semibold mb-3 text-blue-700">Customizable to Your Needs</h3>
+              <h3 className="text-lg font-semibold mb-3 text-blue-700 text-center">Customizable to Your Needs</h3>
               <p className="text-gray-600 text-center text-base">Adjustable width and configuration to perfectly fit different items and maximize your space.</p>
             </div>
             {/* 优点2 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
             <Image
-                src="/images/home/Solution.png"
+                src="/images/Home/Solution.png"
                 alt="Solution"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
+                width={270} 
+                height={180} 
+                className="rounded-lg object-contain w-full h-44" // 添加固定高度 h-44
               />
-              <h3 className="text-lg font-semibold mb-3 text-blue-700">Affordable Solution</h3>
+              <h3 className="text-lg font-semibold mb-3 text-blue-700 text-center">Affordable Solution</h3>
               <p className="text-gray-600 text-center text-base">A cost-effective way to improve organization without the extra cost of complex systems.</p>
             </div>
             {/* 优点3 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
               <Image
-                src="/images/home/Durable.png"
+                src="/images/Home/Durable.png"
                 alt="Durable"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
+                width={270} 
+                height={180} 
+                className="rounded-lg object-contain w-full h-44" // 添加固定高度 h-44
               />
-              <h3 className="text-lg font-semibold mb-3 text-blue-700">Durable & Easy to Use</h3>
+              <h3 className="text-lg font-semibold mb-3 text-blue-700 text-center">Durable & Easy to Use</h3>
               <p className="text-gray-600 text-center text-base">Made from sturdy plastic, long-lasting and quick to install for most fridges and shelves.</p>
             </div>
             {/* 优点4 */}
             <div className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center hover:shadow-lg transition-shadow">
               <Image
-                src="/images/home/Flexible.png"
+                src="/images/Home/Flexible.png"
                 alt="Flexible Order"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover"
+                width={270} 
+                height={180} 
+                className="rounded-lg object-contain w-full h-44" // 添加固定高度 h-44
               />
-              <h3 className="text-lg font-semibold mb-3 text-blue-700">Flexible Order Quantity</h3>
+              <h3 className="text-lg font-semibold mb-3 text-blue-700 text-center">Flexible Order Quantity</h3>
               <p className="text-gray-600 text-center text-base">Order in quantities that suit your business needs, whether for small shops or large supermarkets.</p>
             </div>
           </div>
