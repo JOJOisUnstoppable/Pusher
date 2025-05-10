@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Header from '@/components/Header' // 新增导入 Header
+import Footer from '@/components/Footer' // 新增导入 Footer
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header /> {/* 新增 Header 组件 */}
+        {children}
+        <Footer /> {/* 新增 Footer 组件 */}
+      </body>
     </html>
   )
 }
